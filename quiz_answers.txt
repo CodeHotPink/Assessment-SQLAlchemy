@@ -1,0 +1,19 @@
+Put your answers to the knowledge quiz here.
+1. B
+2. A
+3. D
+4. A
+5. D
+6. A
+7. D
+8. B
+9. It's a design pattern to follow to maintain integrity between tables/dbs. You enforce it by setting relationships between tables to prevent someone from accidentally modifying a row(s) which would effect another table. 
+I forgot so I'm pretty much bsing this based off of question 7.
+10. Data normalization is when the data is encapsulated in classes. This allows us to access the data more easily and gives us more options. 
+Also bsing :)
+11. 
+Dish Table:
+	* primary key Column: "dish id" 
+	Column: "dish name"
+	Column: "dish description"
+	Column: 
