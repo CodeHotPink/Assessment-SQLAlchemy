@@ -16,4 +16,14 @@ Dish Table:
 	* primary key Column: "dish id" 
 	Column: "dish name"
 	Column: "dish description"
-	Column: 
+	Column: "breakfast price"
+	Column: "lunch price"
+	Column: "dinner price"
+Menu Table:
+	* primary key Column: "menu id"
+	Column: "menu type"
+	Column: "start time"
+	Column: "end time"
+Price Table:
+	* primary key Column: "price id"
+	move breakfast, lunch & dinner price to this table. Column for menu id & column for dish id
