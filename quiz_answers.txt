@@ -13,17 +13,28 @@ I forgot so I'm pretty much bsing this based off of question 7.
 Also bsing :)
 11. 
 Dish Table:
+Notes - table that lists the name & description
 	* primary key Column: "dish id" 
 	Column: "dish name"
 	Column: "dish description"
-	Column: "breakfast price"
-	Column: "lunch price"
-	Column: "dinner price"
+Nutritional Table:
+Notes - since not all dishes will have this information off the bat it's better to have it as a separate table until they get the information. 
+	* foreign key Column : "dish id"
+	Column: "calories"
+	Column: "healthy"
+	Column: "vegetarian"
+	Column: "vegan"
+	Column: "gluten free"
+	Column: "dairy free"
 Menu Table:
+Notes - table that list the type of menu, with start & end time
 	* primary key Column: "menu id"
 	Column: "menu type"
 	Column: "start time"
 	Column: "end time"
 Price Table:
+Notes - table that lists dish prices by menu. I could add a function in SQLAlchemy that serves as a conditional for the menu priced based off menu id.
 	* primary key Column: "price id"
-	move breakfast, lunch & dinner price to this table. Column for menu id & column for dish id
+	Column: "dish id" relational column from Dish Table
+	Column: "menu id" relational column from Menu Table
+	Column: "menu price"
